@@ -1,0 +1,21 @@
+#Section Prolog 
+ 
+#****Begin: Generated Statements*** 
+#****End: Generated Statements**** 
+DIMENSIONCREATE('Статьи затрат'); 
+DIMENSIONSORTORDER('Статьи затрат','BYINPUT','ASCENDING','BYINPUT','ASCENDING'); ATTRINSERT('Статьи затрат','','Полное название','A'); 
+#Section Metadata 
+ 
+#****Begin: Generated Statements*** 
+#****End: Generated Statements**** 
+DIMENSIONELEMENTINSERT('Статьи затрат','',V1,'n'); 
+DIMENSIONELEMENTINSERT('Статьи затрат','',V2,'c'); 
+DIMENSIONELEMENTCOMPONENTADD('Статьи затрат',V2,V1,1.000000); #Section Data 
+ 
+#****Begin: Generated Statements*** 
+#****End: Generated Statements**** 
+ 
+ATTRPUTS(V3,'Статьи затрат',V1,'Полное название'); 
+#Section Epilog 
+#****Begin: Generated Statements*** 
+#****End: Generated Statements**** 
