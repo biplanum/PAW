@@ -1,0 +1,31 @@
+#Section Prolog 
+#****Begin: Generated Statements*** 
+#****End: Generated Statements**** 
+DIMENSIONDESTROY('Номенклатура'); 
+DIMENSIONCREATE('Номенклатура'); 
+DIMENSIONSORTORDER('Номенклатура','BYINPUT','ASCENDING','BYINPUT','ASCENDING'); 
+ATTRDELETE('Номенклатура','Страна производитель'); 
+ATTRINSERT('Номенклатура','','Страна производитель','S'); 
+ATTRDELETE('Номенклатура','Инвентарный номер'); 
+ATTRINSERT('Номенклатура','','Инвентарный номер','N'); 
+#Section Metadata 
+#****Begin: Generated Statements*** 
+#****End: Generated Statements**** 
+DIMENSIONELEMENTINSERT('Номенклатура','',V1,'n'); 
+DIMENSIONELEMENTINSERT('Номенклатура','',V2,'c'); 
+DIMENSIONELEMENTINSERT('Номенклатура','',V3,'c'); 
+DIMENSIONELEMENTINSERT('Номенклатура','',V4,'c'); 
+DIMENSIONELEMENTINSERT('Номенклатура','',V5,'c'); 
+DIMENSIONELEMENTINSERT('Номенклатура','',V6,'c'); 
+DIMENSIONELEMENTCOMPONENTADD('Номенклатура',V2,V1,1.000000); 
+DIMENSIONELEMENTCOMPONENTADD('Номенклатура',V3,V1,1.000000); DIMENSIONELEMENTCOMPONENTADD('Номенклатура',V4,V3,1.000000); 
+DIMENSIONELEMENTCOMPONENTADD('Номенклатура',V5,V1,1.000000); 
+DIMENSIONELEMENTCOMPONENTADD('Номенклатура',V6,V5,1.000000); 
+#Section Data 
+#****Begin: Generated Statements*** 
+#****End: Generated Statements**** 
+ATTRPUTS(V7,'Номенклатура',V1,'Страна производитель'); 
+ATTRPUTN(V8,'Номенклатура',V1,'Инвентарный номер'); 
+#Section Epilog 
+#****Begin: Generated Statements*** 
+#****End: Generated Statements**** 
