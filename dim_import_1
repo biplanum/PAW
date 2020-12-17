@@ -1,0 +1,18 @@
+#Section Prolog
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+DIMENSIONDESTROY('ЦФО');
+DIMENSIONCREATE('ЦФО');
+DIMENSIONSORTORDER('ЦФО','BYINPUT','ASCENDING','BYINPUT','ASCENDING');
+#Section Metadata
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+DIMENSIONELEMENTINSERT('ЦФО','',V1,'n');
+DIMENSIONELEMENTINSERT('ЦФО','',V2,'c');
+DIMENSIONELEMENTCOMPONENTADD('ЦФО',V2,V1,1.000000);
+#Section Data
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#Section Epilog
+#****Begin: Generated Statements***
+#****End: Generated Statements****
